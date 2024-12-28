@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TeleCare - Your Online Health Service</title>
+        <link rel="stylesheet" href="medstyle.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="telemed_.png" alt="TeleCare Logo" />
+            </div>
+            <h1>TeleCare - Your Online Health Service</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <br />
+
+        <!-- Home Section -->
+        <section id="home" class="content">
+            <h2>Welcome to TeleCare!</h2>
+            <br />
+            <p>
+                Get the care you need 24/7. Connect with healthcare
+                professionals from the comfort of your home.
+            </p>
+            <img
+                src="—Pngtree—patient on the hospital bed_14587952.png"
+                alt="Homepage image"
+            />
+
+            <!-- Login/Registration Section -->
+            <div class="login-register">
+                <h3>Login</h3>
+                <form id="login-form">
+                    <label for="email-login">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email-login"
+                        name="email"
+                        required
+                    />
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password-login"
+                        name="password"
+                        required
+                    />
+                    <label for="role">Login as:</label>
+                    <select name="role" id="role" required>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <button type="submit">Login</button>
+                </form>
+                <br />
+                <p>
+                    New to TeleCare? <a href="register.html">Register here</a>
+                </p>
+            </div>
+            <br />
+
+            <!-- Links for Quick Navigation -->
+            <p><strong>Access Your Dashboard:</strong></p>
+            <ul>
+                <li><a href="patient-dash.html">Patient Dashboard</a></li>
+                <li><a href="doctor-dash.html">Doctor Dashboard</a></li>
+                <li><a href="admin-dash.html">Admin Dashboard</a></li>
+            </ul>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content">
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.google.com/maps/search/clinics+near+me"
+                        target="_blank"
+                        >Find nearby health centers</a
+                    >
+                </li>
+                <li>
+                    <a href="appointment.html"
+                        >Book appointments with doctors</a
+                    >
+                </li>
+                <li><a href="#">Virtual consultations</a></li>
+                <li><a href="#">Access health resources</a></li>
+            </ul>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content">
+            <h2>About Us</h2>
+            <p>
+                TeleCare is committed to making healthcare more accessible and
+                convenient. With our platform, patients and providers can
+                connect seamlessly for better health outcomes.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name-contact">Name:</label>
+                <input type="text" id="name-contact" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email-contact" name="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 TeleCare. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

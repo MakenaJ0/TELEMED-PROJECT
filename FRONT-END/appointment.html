@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book an Appointment - TeleCare</title>
+        <link rel="stylesheet" href="medstyle.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="telemed_.png" alt="TeleCare Logo" />
+            </div>
+            <h1>Book an Appointment</h1>
+        </header>
+        <main>
+            <section class="appointment-form">
+                <h3>Fill in the details below</h3>
+                <form action="#" method="post">
+                    <!-- Patient Name -->
+                    <label for="patient-name">Your Name:</label>
+                    <input
+                        type="text"
+                        id="patient-name"
+                        name="patient-name"
+                        required
+                    />
+
+                    <!-- Select Doctor -->
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="" disabled selected>
+                            Choose a doctor
+                        </option>
+                        <option value="dr-smith">Dr. Smith</option>
+                        <option value="dr-jones">Dr. Jones</option>
+                        <option value="dr-brown">Dr. Brown</option>
+                    </select>
+
+                    <!-- Appointment Date -->
+                    <label for="appointment-date">Date:</label>
+                    <input
+                        type="date"
+                        id="appointment-date"
+                        name="appointment-date"
+                        required
+                    />
+
+                    <!-- Appointment Time -->
+                    <label for="appointment-time">Time:</label>
+                    <input
+                        type="time"
+                        id="appointment-time"
+                        name="appointment-time"
+                        required
+                    />
+
+                    <!-- Submit Button -->
+                    <button type="submit">Book Appointment</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 TeleCare. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
